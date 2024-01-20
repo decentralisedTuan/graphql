@@ -7,7 +7,11 @@ import ErrorMessage from "../ErrorMessage/ErrorMessage";
 import Button from "../Button/Button";
 import QuantityModifier from "../QuantityModifier/QuantityModifier";
 
-const ProductDetails = ({ id }: { id: number }) => {
+type ProductDetailsProps = {
+  id: number;
+};
+
+const ProductDetails = ({ id }: ProductDetailsProps) => {
   const [quantity, setQuantity] = useState(1);
   const { addItem } = useContext(CartContext);
 

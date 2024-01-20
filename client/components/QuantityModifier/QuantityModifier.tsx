@@ -2,13 +2,12 @@ import { Dispatch, SetStateAction } from "react";
 import Button from "../Button/Button";
 import styles from "./quantity-modifier.module.scss";
 
-const QuantityModifier = ({
-  quantity,
-  setQuantity,
-}: {
+type QuantityModifierProps = {
   quantity: number;
   setQuantity: Dispatch<SetStateAction<number>>;
-}) => {
+};
+
+const QuantityModifier = ({ quantity, setQuantity }: QuantityModifierProps) => {
   const add = () => {
     setQuantity((value) => value + 1);
   };

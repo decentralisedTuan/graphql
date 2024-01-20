@@ -12,7 +12,7 @@ type CartContextType = {
 const CartContext = createContext<CartContextType>({
   items: [],
   total: 0,
-  setItems: (items: CartItem[]) => {},
+  setItems: () => {},
   addItem: () => {},
   setTotal: () => {},
 });
