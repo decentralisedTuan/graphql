@@ -11,7 +11,7 @@ type ProductDetailsProps = {
   id: number;
 };
 
-const ProductDetails = ({ id }: ProductDetailsProps) => {
+export default function ProductDetails({ id }: ProductDetailsProps) {
   const [quantity, setQuantity] = useState(1);
   const { addItem } = useContext(CartContext);
 
@@ -101,6 +101,4 @@ const ProductDetails = ({ id }: ProductDetailsProps) => {
       </div>
     </>
   );
-};
-
-export default ProductDetails;
+}

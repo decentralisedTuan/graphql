@@ -7,7 +7,10 @@ type QuantityModifierProps = {
   setQuantity: Dispatch<SetStateAction<number>>;
 };
 
-const QuantityModifier = ({ quantity, setQuantity }: QuantityModifierProps) => {
+export default function QuantityModifier({
+  quantity,
+  setQuantity,
+}: QuantityModifierProps) {
   const add = () => {
     setQuantity((value) => value + 1);
   };
@@ -28,6 +31,4 @@ const QuantityModifier = ({ quantity, setQuantity }: QuantityModifierProps) => {
       </div>
     </div>
   );
-};
-
-export default QuantityModifier;
+}

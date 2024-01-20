@@ -6,12 +6,10 @@ type ButtonProps = {
   onClick: MouseEventHandler<HTMLButtonElement>;
 };
 
-const Button = ({ text, onClick, className }: ButtonProps) => {
+export default function Button({ text, onClick, className }: ButtonProps) {
   return (
     <button onClick={onClick} className={className}>
       {text}
     </button>
   );
-};
-
-export default Button;
+}

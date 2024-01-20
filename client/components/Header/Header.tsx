@@ -2,7 +2,7 @@ import { useContext } from "react";
 import styles from "./header.module.scss";
 import CartContext from "../../context/cart";
 
-const Header = () => {
+export default function Header() {
   const { total } = useContext(CartContext);
 
   return (
@@ -20,6 +20,4 @@ const Header = () => {
       </div>
     </header>
   );
-};
-
-export default Header;
+}

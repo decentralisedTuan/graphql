@@ -1,6 +1,6 @@
 import styles from "./copyright.module.scss";
 
-const Copyright = () => {
+export default function Copyright() {
   return (
     <div className={styles.copyright}>
       <p>
@@ -10,6 +10,4 @@ const Copyright = () => {
       </p>
     </div>
   );
-};
-
-export default Copyright;
+}

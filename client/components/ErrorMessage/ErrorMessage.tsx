@@ -4,10 +4,10 @@ type ErrorMessageProps = {
   message: string;
 };
 
-const ErrorMessage = ({ message }: ErrorMessageProps) => (
-  <div className={styles.container}>
-    <span className={styles.message}>{message}</span>
-  </div>
-);
-
-export default ErrorMessage;
+export default function ErrorMessage({ message }: ErrorMessageProps) {
+  return (
+    <div className={styles.container}>
+      <span className={styles.message}>{message}</span>
+    </div>
+  );
+}

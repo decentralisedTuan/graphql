@@ -9,12 +9,10 @@ type CartContextType = {
   setTotal: (total: number) => void;
 };
 
-const CartContext = createContext<CartContextType>({
+export default createContext<CartContextType>({
   items: [],
   total: 0,
   setItems: () => {},
   addItem: () => {},
   setTotal: () => {},
 });
-
-export default CartContext;
