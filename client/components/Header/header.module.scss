@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 20px 10px;
+
+  .logo {
+    width: 150px;
+    height: 20px;
+  }
+  .basketContainer {
+    position: relative;
+
+    .basket {
+      height: 30px;
+    }
+    .basketItems {
+      position: absolute;
+      top: 0;
+      color: var(--sohoLights);
+      font-weight: bold;
+    }
+  }
+}
