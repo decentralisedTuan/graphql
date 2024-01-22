@@ -1,5 +1,14 @@
 <img src="https://static.octopuscdn.com/constantine/constantine.svg" alt="Octopus Energy mascot, Constantine" width="100" />
 
+
+# Node version used
+
+  ```
+  "engines" : { 
+    "node" : ">=20.11.0"
+  }
+  ```
+
 # Octopus Frontend code test
 
 In this code test, you'll be asked to:
